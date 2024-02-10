@@ -1,8 +1,9 @@
 const express = require('express');
 const mongoose = require('mongoose');
 mongoose.Promise = global.Promise
-const  URL = process.env.URL
-console.log(URL)
+require('dotenv').config();
+const URL = process.env.URL
+
 
 // Crear una instancia de la aplicación de Express
 const app = express();
